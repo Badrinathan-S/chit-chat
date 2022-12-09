@@ -1,0 +1,16 @@
+{
+  "name": "chit-chat",
+  "version": "1.0.0",
+  "description": "அரட்டை",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "author": "Badrinathan Subramani",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
