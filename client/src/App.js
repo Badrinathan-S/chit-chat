@@ -1,13 +1,15 @@
-import './App.css';
-import { Button } from '@chakra-ui/react'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import ChatsPage from "./component/pages/ChatsPage";
+import HomePage from "./component/pages/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello Peter!</h1>
-        <Button colorScheme='blue'>Button</Button>
-      </header>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/chats" element={<ChatsPage />} />
+      </Routes>
     </div>
   );
 }
