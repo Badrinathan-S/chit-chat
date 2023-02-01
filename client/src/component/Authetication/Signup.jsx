@@ -16,12 +16,17 @@ const Signup = () => {
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
   const [pic, setPic] = useState();
+  const [loading, setLoading] = useState(false);
+  const api_key = "778248231698155";
 
   const handleClick = () => {
     setShow(!show);
   };
 
-  const postDetails = (pics) => {};
+  const postDetails = (pics) => {
+    setLoading(true);
+    
+  };
 
   const submitHandler = () => {
     console.log("hi");
