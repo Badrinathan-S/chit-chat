@@ -60,7 +60,7 @@ const Login = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
 
       setLoading(false);
-      navigate("/");
+      navigate("/chats");
     } catch (error) {
       toast({
         title: "Error Occured!",
@@ -80,7 +80,7 @@ const Login = () => {
         <FormLabel>Email</FormLabel>
         <Input
           placeholder="Enter Your Email"
-          value={email}
+          value={email || ''}
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
@@ -89,7 +89,7 @@ const Login = () => {
         <InputGroup>
           <Input
             type={show ? "text" : "password"}
-            value={password}
+            value={password || ''}
             placeholder="Enter Your Password"
             onChange={(e) => setPassword(e.target.value)}
           />
