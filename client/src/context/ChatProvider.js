@@ -10,6 +10,7 @@ const ChatProvider = ({ children }) => {
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
     setUser(userInfo);
 
+    console.log(user);
     if (!userInfo) {
       navigate("/");
     }
